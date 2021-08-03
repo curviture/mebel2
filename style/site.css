@@ -1,0 +1,334 @@
+@font-face {
+   font-family: "DIN Pro Regular";
+   src: url('../font/DINPro.html') format('woff2'), url('../font/DINPro.woff') format('woff'), url('../font/DINPro.ttf') format('truetype'), url('../font/DINPro.svg#DINPro') format('svg'), url('../font/DINPro.eot') format('embedded-opentype');
+}
+@font-face {
+   font-family: "DIN Pro Black";
+   src: url('../font/DINPro-Black.html') format('woff2'), url('../font/DINPro-Black.woff') format('woff'), url('../font/DINPro-Black.ttf') format('truetype'), url('../font/DINPro-Black.svg#DINPro-Black') format('svg'), url('../font/DINPro-Black.eot') format('embedded-opentype');
+}
+@font-face {
+   font-family: "DIN Pro Light";
+   src: url('../font/DINPro-Light.html') format('woff2'), url('../font/DINPro-Light.woff') format('woff'), url('../font/DINPro-Light.ttf') format('truetype'), url('../font/DINPro-Light.svg#DINPro-Light') format('svg'), url('../font/DINPro-Light.eot') format('embedded-opentype');
+}
+@font-face {
+   font-family: "DIN Pro Medium";
+   src: url('../font/DINPro-Medium.html') format('woff2'), url('../font/DINPro-Medium.woff') format('woff'), url('../font/DINPro-Medium.ttf') format('truetype'), url('../font/DINPro-Medium.svg#DINPro-Medium') format('svg'), url('../font/DINPro-Medium.eot') format('embedded-opentype');
+}
+@font-face {
+   font-family: "DIN Pro Bold";
+   src: url('../font/DINPro-Bold.html') format('woff2'), url('../font/DINPro-Bold.woff') format('woff'), url('../font/DINPro-Bold.ttf') format('truetype'), url('../font/DINPro-Bold.svg#DINPro-Bold') format('svg'), url('../font/DINPro-Bold.eot') format('embedded-opentype');
+}
+@-webkit-keyframes transform-bounce {
+0% {
+   -webkit-transform: rotate(0deg);
+}
+20% {
+   -webkit-transform: rotate(0deg);
+}
+40% {
+   -webkit-transform: translate(0px,-30px) rotate(0deg);
+}
+50% {
+   -webkit-transform: translate(0px,0px) rotate(0deg);
+}
+60% {
+   -webkit-transform: translate(0px,-15px) rotate(0deg);
+}
+80% {
+   -webkit-transform: translate(0px,0px) rotate(0deg);
+}
+100% {
+   -webkit-transform: translate(0px,0px) rotate(0deg);
+}
+}
+@-moz-keyframes transform-bounce {
+0% {
+   -moz-transform: rotate(0deg);
+}
+20% {
+   -moz-transform: rotate(0deg);
+}
+40% {
+   -moz-transform: translate(0px,-30px) rotate(0deg);
+}
+50% {
+   -moz-transform: translate(0px,0px) rotate(0deg);
+}
+60% {
+   -moz-transform: translate(0px,-15px) rotate(0deg);
+}
+80% {
+   -moz-transform: translate(0px,0px) rotate(0deg);
+}
+100% {
+   -moz-transform: translate(0px,0px) rotate(0deg);
+}
+}
+@keyframes transform-bounce {
+0% {
+   transform: rotate(0deg);
+}
+20% {
+   transform: rotate(0deg);
+}
+40% {
+   transform: translate(0px,-30px) rotate(0deg);
+}
+50% {
+   transform: translate(0px,0px) rotate(0deg);
+}
+60% {
+   transform: translate(0px,-15px) rotate(0deg);
+}
+80% {
+   transform: translate(0px,0px) rotate(0deg);
+}
+100% {
+   transform: translate(0px,0px) rotate(0deg);
+}
+}
+@-webkit-keyframes turbine {
+0% {
+   -webkit-transform: rotate(360deg) scale(1,1);
+}
+50% {
+   -webkit-transform: rotate(3600deg) scale(1,1);
+}
+100% {
+   -webkit-transform: rotate(36000deg) scale(1,1);
+}
+}
+@-moz-keyframes turbine {
+0% {
+   -moz-transform: rotate(360deg) scale(1,1);
+}
+50% {
+   -moz-transform: rotate(3600deg) scale(1,1);
+}
+100% {
+   -moz-transform: rotate(36000deg) scale(1,1);
+}
+}
+@keyframes turbine {
+0% {
+   transform: rotate(360deg) scale(1,1);
+}
+50% {
+   transform: rotate(3600deg) scale(1,1);
+}
+100% {
+   transform: rotate(36000deg) scale(1,1);
+}
+}
+a {
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited {
+   color: #800080;
+}
+a:active {
+   color: #FF0000;
+}
+a:hover {
+   color: #0000FF;
+   text-decoration: underline;
+}
+input:focus,
+textarea:focus,
+select:focus {
+   outline: none;
+}
+.visibility-hidden {
+   visibility: hidden;
+}
+a.menu {
+   -moz-transition: all 300ms linear;
+   -webkit-transition: all 300ms linear;
+   color: #FFFFFF;
+   display: inline-block;
+   position: relative;
+   text-decoration: none;
+   transition: all 300ms linear;
+}
+a.menu::after {
+   -moz-transition: all 300ms linear;
+   -webkit-transition: all 300ms linear;
+   background: transparent;
+   content: "";
+   display: block;
+   height: 2px;
+   margin: auto;
+   margin-top: 2px;
+   transition: all 300ms linear;
+   width: 0;
+}
+a.menu:hover::after {
+   background: #FFFFFF;
+   width: 100%;
+}
+a.menu:visited {
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.menu:active {
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.menu:hover {
+   color: #FFFFFF;
+   text-decoration: none;
+}
+a.menu_black {
+   -moz-transition: all 300ms linear;
+   -webkit-transition: all 300ms linear;
+   color: #000000;
+   display: inline-block;
+   position: relative;
+   text-decoration: none;
+   transition: all 300ms linear;
+}
+a.menu_black::after {
+   -moz-transition: all 300ms linear;
+   -webkit-transition: all 300ms linear;
+   background: transparent;
+   content: "";
+   display: block;
+   height: 2px;
+   margin: auto;
+   margin-top: 2px;
+   transition: all 300ms linear;
+   width: 0;
+}
+a.menu_black:hover::after {
+   background: #000000;
+   width: 100%;
+}
+a.menu_black:visited {
+   color: #000000;
+   text-decoration: none;
+}
+a.menu_black:active {
+   color: #000000;
+   text-decoration: none;
+}
+a.menu_black:hover {
+   color: #000000;
+   text-decoration: none;
+}
+.knop1_1 {
+   background-clip: padding-box;
+   background-color: #EE1919;
+   border: 1px solid #EE1919;
+   border-radius: 10px;
+   color: #FFFFFF;
+   font-family: "DIN Pro Regular";
+   font-size: 16px;
+   text-decoration: none;
+}
+.knop1_2 {
+   background-clip: padding-box;
+   background-color: #FF0000;
+   border: 1px solid #FF0000;
+   border-radius: 10px;
+   color: #FFFFFF;
+   font-family: "DIN Pro Regular";
+   font-size: 16px;
+   text-decoration: none;
+}
+.knop2_1 {
+   background-clip: padding-box;
+   background-color: transparent;
+   border: 1px solid #232324;
+   border-radius: 10px;
+   color: #232324;
+   font-family: "DIN Pro Regular";
+   font-size: 16px;
+   text-decoration: none;
+}
+.knop2_2 {
+   background-clip: padding-box;
+   background-color: #232324;
+   border: 1px solid #232324;
+   border-radius: 10px;
+   color: #FFFFFF;
+   font-family: "DIN Pro Regular";
+   font-size: 16px;
+   text-decoration: none;
+}
+.knop3_1 {
+   background-clip: padding-box;
+   background-color: #232324;
+   border: 1px solid #232324;
+   border-radius: 10px;
+   color: #FFFFFF;
+   font-family: "DIN Pro Regular";
+   font-size: 16px;
+   text-decoration: none;
+}
+.knop3_2 {
+   background-clip: padding-box;
+   background-color: #3C3C3C;
+   border: 1px solid #3C3C3C;
+   border-radius: 10px;
+   color: #FFFFFF;
+   font-family: "DIN Pro Regular";
+   font-size: 16px;
+   text-decoration: none;
+}
+.insta1 {
+   background-color: transparent;
+   background-image: url(../images/insta1.png);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   text-decoration: none;
+}
+.insta2 {
+   background-color: transparent;
+   background-image: url(../images/insta2.png);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   text-decoration: none;
+}
+.knop4_1 {
+   background-clip: padding-box;
+   background-color: #FFFFFF;
+   border: 1px solid #FFFFFF;
+   border-radius: 5px;
+   color: #232324;
+   font-family: "DIN Pro Regular";
+   font-size: 13px;
+   text-decoration: none;
+}
+.knop4_2 {
+   background-clip: padding-box;
+   background-color: #232324;
+   border: 1px solid #232324;
+   border-radius: 5px;
+   color: #FFFFFF;
+   font-family: "DIN Pro Regular";
+   font-size: 13px;
+   text-decoration: none;
+}
+.knop5_1 {
+   background-clip: padding-box;
+   background-color: #EE1919;
+   border: 1px solid #EE1919;
+   border-radius: 5px;
+   color: #FFFFFF;
+   font-family: "DIN Pro Regular";
+   font-size: 13px;
+   text-decoration: none;
+}
+.knop5_2 {
+   background-clip: padding-box;
+   background-color: #FF0000;
+   border: 1px solid #FF0000;
+   border-radius: 5px;
+   color: #FFFFFF;
+   font-family: "DIN Pro Regular";
+   font-size: 13px;
+   text-decoration: none;
+}
